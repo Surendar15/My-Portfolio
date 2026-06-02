@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Surendra Prakash S - Portfolio. CSE Student at Sri Eshwar College of Engineering specializing in Software Development, DSA, and Web Tech.">
+    <meta name="keywords"
+        content="Surendra Prakash S, Surendar, Portfolio, SECE, CSE Student, Software Developer, Leetcode, Skillrack, Coimbatore">
+    <meta name="author" content="Surendra Prakash S">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surendar15.github.io/">
+    <meta property="og:title" content="Surendra Prakash S | Software Developer Portfolio">
+    <meta property="og:description"
+        content="Software development projects and coding achievements of Surendra Prakash S.">
+    <meta property="og:image" content="assets/avatar.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Surendra Prakash S | Software Developer Portfolio">
+    <meta property="twitter:description"
+        content="Software development projects and coding achievements of Surendra Prakash S.">
+    <meta property="twitter:image" content="assets/avatar.png">
+
+    <title>Surendra Prakash S | CSE Student & Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Local CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Glowing Blobs in Background -->
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-cyan"></div>
+    <div class="blob blob-blue"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>SURENDRA PRAKASH<span class="logo-accent"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="cta-nav">Let's Talk</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-sub">WELCOME TO MY DIGITAL PORTFOLIO</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Surendra Prakash</span>
+                    </h1>
+                    <h2 class="hero-typed">
+                        I specialize in <span class="typed-text" id="typed-text"></span><span
+                            class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A B.E. Computer Science and Engineering student at Sri Eshwar College of Engineering. Passionate
+                        about solving complex algorithms, designing secure software utilities, and building responsive
+                        web applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Connect</span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll Down to About Section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. ABOUT ME</span>
+                    <h2 class="section-title">Aspiring Software Engineer</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-column">
+                        <p class="about-para">
+                            I am currently pursuing my B.E. in Computer Science and Engineering at Sri Eshwar College of
+                            Engineering, Coimbatore. With an academic record of 8.34 CGPA and a profound passion for
+                            programming, I dedicate my time to mastering Data Structures, Algorithms, and clean system
+                            designs.
+                        </p>
+                        <p class="about-para">
+                            My coding journey is highlighted by strong problem-solving skills, having successfully
+                            solved 1000+ problems on Skillrack and 100+ on Leetcode. I am comfortable working with
+                            backends in Java and Python, as well as developing clean, responsive frontend architectures
+                            with HTML, CSS, JavaScript, and React.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i data-lucide="terminal"></i>
+                                </div>
+                                <h3 class="highlight-title">Problem Solving</h3>
+                                <p class="highlight-desc">Active competitive programmer with deep understanding of C/C++
+                                    and Java DSA.</p>
+                            </div>
+
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i data-lucide="shield-check"></i>
+                                </div>
+                                <h3 class="highlight-title">Secure Engineering</h3>
+                                <p class="highlight-desc">Designing sanitization filters and security checks to counter
+                                    vulnerabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details-column">
+                        <div class="info-card glass-panel">
+                            <h3 class="info-title">Academic Details</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-label">Full Name:</span>
+                                    <span class="info-val">Surendra Prakash S</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Education:</span>
+                                    <span class="info-val">B.E. CSE (Sophomore)</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Institution:</span>
+                                    <span class="info-val">Sri Eshwar College Of Engg.</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Current Location:</span>
+                                    <span class="info-val">Tamil Nadu, India</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Email:</span>
+                                    <span class="info-val">surendraprakash.s2024cse@sece.ac.in</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Availability:</span>
+                                    <span class="info-val availability-badge">Open for Internships</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. MY TOOLKIT</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-column glass-panel">
+                        <div class="skills-col-header">
+                            <i data-lucide="code" class="skills-col-icon"></i>
+                            <h3 class="skills-col-title">Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C / C++</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Databases -->
+                    <div class="skills-column glass-panel">
+                        <div class="skills-col-header">
+                            <i data-lucide="globe" class="skills-col-icon"></i>
+                            <h3 class="skills-col-title">Web & Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3 / JS</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React / Node.js</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL / MongoDB</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-column glass-panel">
+                        <div class="skills-col-header">
+                            <i data-lucide="activity" class="skills-col-icon"></i>
+                            <h3 class="skills-col-title">Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / Canva</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Skillrack (1000+ Solved)</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">LeetCode (100+ Solved)</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. WORK SAMPLES</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="java">Java Backend</button>
+                    <button class="filter-btn" data-filter="python">Python utilities</button>
+                    <button class="filter-btn" data-filter="web">Web Tech</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel" data-category="java web">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project1.png" alt="ZECA App Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Source Code">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Java & Web Application (2024)</span>
+                            <h3 class="project-name">ZECA Sustainability Platform</h3>
+                            <p class="project-desc">
+                                A sustainability-focused application implementing eco-friendly solutions and sustainable
+                                practices. Aims to track and minimize carbon emissions and promote green alternatives
+                                across various activities, driving environmental impact through innovative technology.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-item">Java</span>
+                                <span class="project-tag-item">HTML5</span>
+                                <span class="project-tag-item">CSS3</span>
+                                <span class="project-tag-item">Sustainability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel" data-category="python">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project2.png" alt="Secure File Renaming Tool Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Source Code">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Python Backend Tool (2025)</span>
+                            <h3 class="project-name">Secure File Renaming Tool</h3>
+                            <p class="project-desc">
+                                A secure file renaming script built using robust sanitization techniques to clean
+                                filenames, prevent naming collisions, and preserve file extensions. Implemented
+                                comprehensive security checks to prevent directory traversal vulnerabilities and invalid
+                                characters.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-item">Python</span>
+                                <span class="project-tag-item">Security Sanitization</span>
+                                <span class="project-tag-item">File System API</span>
+                                <span class="project-tag-item">Regex</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel" data-category="java web">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project3.png" alt="Personal Income Tracker Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Source Code">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Java & Web Tech (2025)</span>
+                            <h3 class="project-name">Personal Income Tracker</h3>
+                            <p class="project-desc">
+                                A personal finance tracking application featuring a Java backend for efficient income
+                                and expense data handling and a responsive HTML/CSS frontend. Supports seamless
+                                financial monitoring and real-time updates.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-item">Java</span>
+                                <span class="project-tag-item">HTML5</span>
+                                <span class="project-tag-item">CSS3</span>
+                                <span class="project-tag-item">Finance Tracker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="education" class="experience-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. MY PATHWAY</span>
+                    <h2 class="section-title">Education & Milestones</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Node 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-badge">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-panel glass-panel">
+                            <span class="timeline-date">Aug 2024 - June 2028</span>
+                            <h3 class="timeline-role">B.E. Computer Science and Engineering</h3>
+                            <h4 class="timeline-org">Sri Eshwar College Of Engineering, Coimbatore</h4>
+                            <p class="timeline-text">
+                                Currently in 2nd Year. Academic Score: 8.34 CGPA. Immersed in core DSA concepts,
+                                object-oriented programming, DBMS systems, and full-stack web technologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-badge">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="timeline-panel glass-panel">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-role">Runner-Up - CREATEATHON 2024</h3>
+                            <h4 class="timeline-org">College-Level Web Hackathon</h4>
+                            <p class="timeline-text">
+                                Secured 2nd place in CREATEATHON 2024 ("Where Innovation Meets Creativity"), developing
+                                a highly functional and creative web-based solution under a tight competitive deadline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-badge">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-panel glass-panel">
+                            <span class="timeline-date">June 2023 - Mar 2024</span>
+                            <h3 class="timeline-role">HSC (Higher Secondary Course)</h3>
+                            <h4 class="timeline-org">Christ The King Matric. Hr. Sec. School</h4>
+                            <p class="timeline-text">
+                                Completed schooling with a score of 96.50%. Specialized in Computer Science and
+                                Mathematics courses.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-badge">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="timeline-panel glass-panel">
+                            <span class="timeline-date">Ongoing</span>
+                            <h3 class="timeline-role">Certifications & Training</h3>
+                            <h4 class="timeline-org">Technical Development Courses</h4>
+                            <p class="timeline-text">
+                                Completed C Programming Training (Score: 90%) and C++ Programming Training (Score: 87%).
+                                Mastered DSA and Python fundamentals through continuous self-study.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. GET IN TOUCH</span>
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-column">
+                        <h3 class="contact-sub-title">Let's discuss something amazing!</h3>
+                        <p class="contact-desc">
+                            Have an internship opportunity, project collaboration, or a technical inquiry? Drop me a
+                            message! I'm always open to discussing DSA concepts, full-stack tools, and modern software
+                            strategies.
+                        </p>
+
+                        <div class="contact-channels">
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-name">Direct Email</span>
+                                    <a href="mailto:surendraprakash.s2024cse@sece.ac.in"
+                                        class="channel-link">surendraprakash.s2024cse@sece.ac.in</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-name">Contact Number</span>
+                                    <a href="tel:+917200511655" class="channel-link">+91 72005 11655</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span class="channel-name">Institution Location</span>
+                                    <span class="channel-val">Coimbatore, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="socials-wrapper">
+                            <a href="https://github.com/surendar15" target="_blank" class="social-link-icon"
+                                aria-label="GitHub"><i data-lucide="github"></i></a>
+                            <a href="https://leetcode.com/u/surendar15/" target="_blank" class="social-link-icon"
+                                aria-label="LeetCode"><i data-lucide="code-2"></i></a>
+                            <a href="#" target="_blank" class="social-link-icon" aria-label="LinkedIn"><i
+                                    data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-column">
+                        <form id="contact-form" class="contact-form glass-panel" novalidate>
+                            <div class="form-row-double">
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <input type="text" id="form-name" class="form-control" placeholder="John Doe"
+                                        required>
+                                    <span class="error-msg" id="name-error">Please fill in your name</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <input type="email" id="form-email" class="form-control"
+                                        placeholder="john@example.com" required>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-control"
+                                    placeholder="Let's collaborate" required>
+                                <span class="error-msg" id="subject-error">Please fill in the subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <textarea id="form-message" class="form-control" rows="5"
+                                    placeholder="Hi Surendra Prakash, I'd love to chat about..." required></textarea>
+                                <span class="error-msg" id="message-error">Please write a message</span>
+                            </div>
+
+                            <button type="submit" id="form-submit" class="btn btn-primary btn-block">
+                                <span class="submit-btn-text">Send Message</span>
+                                <i data-lucide="send" class="submit-btn-icon"></i>
+                            </button>
+
+                            <!-- Custom Success Alert -->
+                            <div class="success-alert" id="success-alert">
+                                <i data-lucide="check-circle" class="alert-icon"></i>
+                                <div class="alert-body">
+                                    <h4 class="alert-title">Message Sent Successfully!</h4>
+                                    <p class="alert-desc">Thank you for reaching out, I'll reply within 24 hours.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-accent">&lt;</span>SURENDRA PRAKASH<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p class="footer-credo">Combining programming precision with beautiful layout architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#education" class="footer-link">Education</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; 2026 Surendra Prakash S. Crafted with pride. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+        <i data-lucide="chevrons-up"></i>
+    </a>
+
+    <!-- Local Script Link -->
+    <script src="main.js"></script>
+</body>
+
+</html>
