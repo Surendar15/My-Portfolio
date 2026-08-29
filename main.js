@@ -6,10 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // HERO TYPING EFFECT
     // ==========================================================================
     const typedTextSpan = document.getElementById('typed-text');
-    const textArray = ["Data Structures & Algorithms", "Java Development", "Python Utilities", "Web Technology"];
-    const typingSpeed = 80;
-    const erasingSpeed = 40;
-    const newTextDelay = 2000; // Delay between current and next text
+    const textArray = [
+        "Full Stack Developer",
+        "MERN Stack Engineer",
+        "Spring Boot Developer",
+        "DSA Specialist (LeetCode 1,788)"
+    ];
+    const typingSpeed = 70;
+    const erasingSpeed = 35;
+    const newTextDelay = 2200; // Delay between current and next text
     let textArrayIndex = 0;
     let charIndex = 0;
 
@@ -31,13 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             textArrayIndex++;
             if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingSpeed + 500);
+            setTimeout(type, typingSpeed + 400);
         }
     }
 
     // Start typing animation
     if (typedTextSpan) {
-        setTimeout(type, 1000);
+        setTimeout(type, 800);
     }
 
     // ==========================================================================
@@ -66,8 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 const icon = navToggle.querySelector('i');
-                icon.setAttribute('data-lucide', 'menu');
-                lucide.createIcons();
+                if (icon) {
+                    icon.setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                }
             });
         });
     }
@@ -80,14 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         // Sticky Header effect
-        if (window.scrollY > 50) {
+        if (window.scrollY > 40) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
         // Back to Top visibility
-        if (window.scrollY > 600) {
+        if (window.scrollY > 500) {
             backToTop.classList.add('show');
         } else {
             backToTop.classList.remove('show');
@@ -105,8 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            // Highlight when section is 30% down the screen
-            if (window.scrollY >= (sectionTop - sectionHeight * 0.3)) {
+            if (window.scrollY >= (sectionTop - sectionHeight * 0.35)) {
                 currentSectionId = section.getAttribute('id');
             }
         });
@@ -138,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.15
+        threshold: 0.12
     });
 
     revealElements.forEach(element => {
@@ -176,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (filterValue === 'all' || categories.includes(filterValue)) {
                     card.style.display = 'flex';
-                    // Retrigger styling flow
                     setTimeout(() => {
                         card.style.opacity = '1';
                         card.style.transform = 'scale(1)';
@@ -186,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     card.style.transform = 'scale(0.95)';
                     setTimeout(() => {
                         card.style.display = 'none';
-                    }, 300);
+                    }, 250);
                 }
             });
         });
@@ -245,8 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Loading UI state
                 submitBtn.disabled = true;
                 submitBtnText.textContent = "Sending...";
-                submitBtnIcon.setAttribute('data-lucide', 'loader');
-                submitBtnIcon.classList.add('spin');
+                submitBtnIcon.setAttribute('data-lucide', 'loader-2');
+                submitBtnIcon.style.animation = 'spin 1s linear infinite';
                 lucide.createIcons();
 
                 // Mock Submission delay
@@ -255,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.disabled = false;
                     submitBtnText.textContent = "Message Sent";
                     submitBtnIcon.setAttribute('data-lucide', 'check');
-                    submitBtnIcon.classList.remove('spin');
+                    submitBtnIcon.style.animation = 'none';
                     lucide.createIcons();
 
                     // Show success block
@@ -264,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Reset Form
                     contactForm.reset();
 
-                    // Restore submit button after 3 seconds
+                    // Restore submit button after 5 seconds
                     setTimeout(() => {
                         submitBtnText.textContent = "Send Message";
                         submitBtnIcon.setAttribute('data-lucide', 'send');
@@ -272,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         successAlert.classList.remove('show');
                     }, 5000);
                     
-                }, 1500);
+                }, 1200);
             }
         });
     }
